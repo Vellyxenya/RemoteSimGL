@@ -11,8 +11,12 @@ file(GLOB SRC_FILES src/*.cpp)
 add_executable(remote_sim_gl ${SRC_FILES})
 
 # Include directories
-target_include_directories(remote_sim_gl PRIVATE include deps/glm)
+target_include_directories(remote_sim_gl PRIVATE include deps/glm deps/nvcodec/Interface)
 
+# Link directories
+target_link_directories(remote_sim_gl PRIVATE deps/nvcodec/Lib/linux/stubs/x86_64)
+# Link libraries
+target_link_libraries(remote_sim_gl PRIVATE nvcuvid nvidia-encode)
 
 # Link external libraries as needed
 # target_link_libraries(remote_sim_gl ...)

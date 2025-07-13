@@ -5,7 +5,13 @@
 #include "InputHandler.hpp"
 #include "Common.hpp"
 #include <iostream>
+
+
 #include <glm/glm.hpp>
+#include <nvEncodeAPI.h>
+#include <nvcuvid.h>
+#include <cuviddec.h>
+
 
 int main() {
     // Entry point for remote-fluid-renderer
