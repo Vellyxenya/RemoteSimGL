@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 17)
 file(GLOB SRC_FILES src/*.cpp)
 
 # Include directories
-include_directories(include deps/glm)
+target_include_directories(remote_sim_gl PRIVATE include deps/glm)
 
 add_executable(remote_sim_gl ${SRC_FILES})
 
