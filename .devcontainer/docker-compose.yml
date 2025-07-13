@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/workspace:cached
+    command: sleep infinity
+    # Add ports or environment as needed
+    # ports:
+    #   - "3000:3000"
+    # environment:
+    #   - EXAMPLE_ENV=1
