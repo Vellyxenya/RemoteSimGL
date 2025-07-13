@@ -1,4 +1,5 @@
 #pragma once
+#include <cstddef>
 // WebRTC streaming + input interface
 
 class WebRTCStreamer {
