@@ -1,3 +1,3 @@
-[submodule "remote_sim_gl/deps/glm"]
-	path = remote_sim_gl/deps/glm
+[submodule "remote-fluid-renderer/deps/glm"]
+	path = remote-fluid-renderer/deps/glm
 	url = https://github.com/g-truc/glm.git

@@ -1,7 +1,8 @@
 # Use the Microsoft Dev Containers base image as a starting point
 FROM mcr.microsoft.com/devcontainers/base:ubuntu-22.04
 
-# [Optional] Install additional packages or tools here
-# RUN apt-get update && apt-get install -y <package-name>
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    cmake \
+    && rm -rf /var/lib/apt/lists/*
 
-# Set up any environment variables or configuration as needed
