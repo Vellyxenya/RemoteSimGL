@@ -5,10 +5,15 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ..:/workspace:cached
+      - ..:/workspace:rw
     command: sleep infinity
-    # Add ports or environment as needed
-    # ports:
-    #   - "3000:3000"
-    # environment:
-    #   - EXAMPLE_ENV=1
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - DISPLAY=host.docker.internal:0.0
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/workspace/remote-fluid-renderer/include -I/workspace/remote-fluid-renderer/deps/glm -I/workspace/remote-fluid-renderer/deps/nvcodec/Interface
+CXX_INCLUDES = -I/workspace/remote-fluid-renderer/include -I/workspace/remote-fluid-renderer/deps/glm -I/workspace/remote-fluid-renderer/deps/nvcodec/Interface -I/workspace/remote-fluid-renderer/build/_deps/glfw-src/include -isystem /usr/local/cuda/include
 
 CXX_FLAGS = 
 
