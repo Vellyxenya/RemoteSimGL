@@ -1,3 +1,6 @@
+#include <glad/gl.h>
+#include <GLFW/glfw3.h>
+
 #include "Renderer.hpp"
 #include "FluidSim.hpp"
 #include "NVEncoder.hpp"
